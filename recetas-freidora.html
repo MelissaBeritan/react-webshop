@@ -1,1 +1,221 @@
-recetas
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricette per Freidora de Aria · React Webshop</title>
+    <meta name="description" content="Scopri deliziose ricette facili e veloci per la tua air fryer. Antipasti, secondi e contorni croccanti con poco olio.">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+            color: #333;
+        }
+        h1 {
+            color: #333;
+            border-bottom: 2px solid #ff9900;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #0066c0;
+            margin-top: 0;
+        }
+        .ricette-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+        .btn-torna {
+            background: #ff9900;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .btn-torna:hover {
+            background: #e68900;
+        }
+        .ricetta-card {
+            margin: 30px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .ricetta-img {
+            flex: 1 1 200px;
+            max-width: 250px;
+        }
+        .ricetta-img img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            object-fit: cover;
+        }
+        .ricetta-contenuto {
+            flex: 3 1 300px;
+        }
+        .ricetta-meta {
+            background: #f8f8f8;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-size: 0.95em;
+        }
+        .ingredienti {
+            font-style: italic;
+            color: #555;
+        }
+        footer {
+            margin-top: 50px;
+            font-size: 0.9em;
+            color: #777;
+            border-top: 1px solid #ddd;
+            padding-top: 20px;
+        }
+        .avviso-affiliato {
+            background: #f8f8f8;
+            padding: 10px;
+            border-left: 4px solid #ff9900;
+            font-size: 0.9em;
+            margin-bottom: 30px;
+        }
+        hr {
+            border: 0;
+            border-top: 1px dashed #ccc;
+            margin: 40px 0;
+        }
+        @media (max-width: 600px) {
+            .ricetta-card {
+                flex-direction: column;
+            }
+            .ricetta-img {
+                max-width: 100%;
+            }
+        }
+        .nota-utile {
+            background: #e7f3ff;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 15px;
+            font-size: 0.95em;
+        }
+    </style>
+</head>
+<body>
+    <div class="ricette-header">
+        <h1>🍽️ Ricette per Freidora de Aria</h1>
+        <a href="index.html" class="btn-torna">← Torna allo shop</a>
+    </div>
+
+    <div class="avviso-affiliato">
+        <strong>📢 Nota:</strong> Questa pagina contiene solo ricette e suggerimenti. Nessun link di vendita.
+    </div>
+
+    <p>La friggitrice ad aria è perfetta per preparare piatti croccanti e gustosi con poco olio. Ecco alcune delle nostre ricette preferite, semplici e veloci. Per ogni ricetta trovi ingredienti e consigli utili.</p>
+
+    <!-- RICETTA 1 -->
+    <div class="ricetta-card">
+        <div class="ricetta-img">
+            <img src="patatine-fritte.jpg" alt="Patatine fritte croccanti in air fryer" onerror="this.src='https://via.placeholder.com/250x200?text=Patatine'">
+        </div>
+        <div class="ricetta-contenuto">
+            <h2>Patatine fritte croccanti</h2>
+            <div class="ricetta-meta">
+                <span>⏱️ Preparazione: 10 min | Cottura: 20 min | 🔥 200°C</span>
+            </div>
+            <p class="ingredienti"><strong>Ingredienti:</strong> 500g di patate, 1 cucchiaio di olio d'oliva, sale q.b., rosmarino (opzionale).</p>
+            <p><strong>Preparazione:</strong> Taglia le patate a bastoncino, lasciale in ammollo in acqua fredda per 30 minuti (asciugale bene). Condisci con olio e sale. Cuoci in air fryer a 200°C per 15-20 minuti, scuotendo il cestello a metà cottura.</p>
+            <div class="nota-utile">
+                💡 <strong>Consiglio:</strong> Per un taglio uniforme, puoi usare un tagliapatate a leva. Disponibile nei negozi di casalinghi.
+            </div>
+        </div>
+    </div>
+
+    <!-- RICETTA 2 -->
+    <div class="ricetta-card">
+        <div class="ricetta-img">
+            <img src="ali-pollo.jpg" alt="Ali di pollo piccanti" onerror="this.src='https://via.placeholder.com/250x200?text=Ali+di+pollo'">
+        </div>
+        <div class="ricetta-contenuto">
+            <h2>Ali di pollo piccanti</h2>
+            <div class="ricetta-meta">
+                <span>⏱️ Preparazione: 15 min | Cottura: 25 min | 🔥 200°C</span>
+            </div>
+            <p class="ingredienti"><strong>Ingredienti:</strong> 1 kg di ali di pollo, 2 cucchiai di olio, paprika, aglio in polvere, pepe di Cayenna, sale.</p>
+            <p><strong>Preparazione:</strong> Asciuga le ali, condiscile con olio e spezie. Disponile in un solo strato nel cestello. Cuoci a 200°C per 12 minuti, gira e cuoci altri 10-13 minuti fino a doratura.</p>
+            <div class="nota-utile">
+                💡 <strong>Consiglio:</strong> Per un sapore extra, lascia marinare le ali con le spezie per un'ora prima della cottura.
+            </div>
+        </div>
+    </div>
+
+    <!-- RICETTA 3 -->
+    <div class="ricetta-card">
+        <div class="ricetta-img">
+            <img src="verdure-grigliate.jpg" alt="Verdure grigliate miste" onerror="this.src='https://via.placeholder.com/250x200?text=Verdure'">
+        </div>
+        <div class="ricetta-contenuto">
+            <h2>Verdure grigliate miste</h2>
+            <div class="ricetta-meta">
+                <span>⏱️ Preparazione: 10 min | Cottura: 12-15 min | 🔥 180°C</span>
+            </div>
+            <p class="ingredienti"><strong>Ingredienti:</strong> zucchine, melanzane, peperoni, cipolla rossa, olio, sale, erbe aromatiche.</p>
+            <p><strong>Preparazione:</strong> Taglia le verdure a pezzi uniformi. Condisci con olio, sale e rosmarino. Cuoci in air fryer a 180°C per circa 12 minuti, mescolando a metà cottura. Servi come contorno o antipasto.</p>
+        </div>
+    </div>
+
+    <!-- RICETTA 4 -->
+    <div class="ricetta-card">
+        <div class="ricetta-img">
+            <img src="dolce-mele.jpg" alt="Mele croccanti alla cannella" onerror="this.src='https://via.placeholder.com/250x200?text=Mele+cannella'">
+        </div>
+        <div class="ricetta-contenuto">
+            <h2>Mele croccanti alla cannella</h2>
+            <div class="ricetta-meta">
+                <span>⏱️ Preparazione: 5 min | Cottura: 10 min | 🔥 180°C</span>
+            </div>
+            <p class="ingredienti"><strong>Ingredienti:</strong> 2 mele, 1 cucchiaio di zucchero di canna, 1 cucchiaino di cannella, succo di limone.</p>
+            <p><strong>Preparazione:</strong> Affetta le mele a spicchi sottili. Mescola con zucchero, cannella e qualche goccia di limone. Disponi in un solo strato nel cestello e cuoci a 180°C per 8-10 minuti. Servi con gelato o yogurt.</p>
+        </div>
+    </div>
+
+    <!-- SEZIONE CONSIGLI (rimossa la parte acquisti) -->
+    <hr>
+    <h2 style="text-align:center;">🍳 Consigli per l'uso della air fryer</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: center;">
+        <div style="border:1px solid #ddd; border-radius:8px; padding:15px; max-width:200px; text-align:center;">
+            <h3>📄 Carta forno forata</h3>
+            <p>Utile per evitare che gli alimenti si attacchino. Cerca quella forata per far circolare l'aria.</p>
+        </div>
+        <div style="border:1px solid #ddd; border-radius:8px; padding:15px; max-width:200px; text-align:center;">
+            <h3>💧 Olio spray</h3>
+            <p>Distribuisci l'olio in modo uniforme. Puoi ricaricare un erogatore con il tuo olio preferito.</p>
+        </div>
+        <div style="border:1px solid #ddd; border-radius:8px; padding:15px; max-width:200px; text-align:center;">
+            <h3>🥘 Griglie sovrapponibili</h3>
+            <p>Alcuni modelli permettono di cuocere su più livelli. Verifica la compatibilità con la tua friggitrice.</p>
+        </div>
+    </div>
+
+    <footer>
+        <h3>Informazioni legali</h3>
+        <p><strong>Contatto:</strong> melissaberitan896@gmail.com</p>
+        <p><strong>Informativa sulla privacy:</strong> Questo sito rispetta la tua privacy. Non memorizziamo dati personali senza il tuo consenso.</p>
+        <p><strong>Informativa sui cookie:</strong> Questo sito utilizza i cookie per migliorare la tua esperienza.</p>
+        <p><strong>Nota legale:</strong> Questa pagina è solo a scopo informativo e non contiene link di affiliazione.</p>
+        <p>© 2026 React Webshop - Tutti i diritti riservati. <a href="#">Licenza MIT</a></p>
+    </footer>
+</body>
+</html>
